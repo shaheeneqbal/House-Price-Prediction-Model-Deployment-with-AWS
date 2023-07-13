@@ -1,4 +1,4 @@
-![image](https://github.com/shaheeneqbal/House-Price-Prediction-Model-Deployment-with-AWS/assets/67499556/f1a83716-9a21-4dd1-95f6-c801f17a6bd6)# House-Price-Prediction-Model-Deployment-with-AWS
+# House-Price-Prediction-Model-Deployment-with-AWS
 ### About
 In this project, I am using "house_data" dataset for predicting House prices with advanced Regression Machine Learning algorithms and also creating a web page using HTML. Deploying this house price prediction machine learning model on an Amazon EC2 instance as web application with Flask which makes the model accessible and scalable for real-time prediction queries.
 ### Introduction
