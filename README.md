@@ -32,7 +32,7 @@ The dataset used for this project is a collection of house data, they are stored
 * city: city of USA
 * zipcode:zip code
 * country: USA  
-### Getting Started
+### Model Development
 ##### Step 1: Dependencies
 To run the code in this repository, need to have the following dependencies installed:
 * Python 3.6+
@@ -63,7 +63,11 @@ Evaluate the performance of the trained model using appropriate evaluation metri
 ##### Step 10: Fine-tune the Model
 If the model's performance is not satisfactory, consider fine-tuning the model by adjusting hyperparameters or trying different algorithms. This iterative process helps improve the model's accuracy.
 ##### Step 11: Make Predictions
-Once the model is trained and evaluated, it is ready to make predictions on new, unseen house data. Provide the relevant features of a house as input to the model, and it will estimate the price based on the learned patterns.
+Once the model is trained and evaluated, it is ready to make predictions on new, unseen house data.
+### Model Deployment on AWS
+
+
+Provide the relevant features of a house as input to the model, and it will estimate the price based on the learned patterns.
 
 
 
