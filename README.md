@@ -2,7 +2,9 @@
 ### About
 In this project, I am using "house_data" dataset for predicting House prices with advanced Regression Machine Learning algorithms and also creating a web page using HTML. Deploying this house price prediction machine learning model on an Amazon EC2 instance as web application with Flask which makes the model accessible and scalable for real-time prediction queries.
 ### Introduction
+The House Price Prediction Model Deployment with AWS is an innovative solution that leverages the power of machine learning and cloud computing to predict house prices accurately. Using 3 different advanced Regression Machine Learning algorithms such as Linear Regression, Random Forest Regressor and Gradient Boosting Regressor. After doing model evaluation and optimization found out that Gradient Boosting Regressor providing good results. I choose Gradient Boosting Regressor for House Price Prediction deployment.
 
+AWS (Amazon Web Services) provides a comprehensive suite of cloud computing tools and services that enable cost-effective and scalable deployment of machine learning models. The House Price Prediction Model can handle big datasets, produce fast predictions, and easily adjust to changing market conditions by leveraging AWS's infrastructure.
 ### Prerequisites
 Before begin, ensure that we have the following prerequisite:
 * VS Code
@@ -83,6 +85,6 @@ Provide the relevant features of a house as input to the model, and it will esti
 ### License
 This project is licensed under the MIT License. Feel free to modify and use it as per your requirements.
 ### Conclusion
-
+The Machine Learning model and cloud computing enables real estate professionals, homeowners, and potential purchasers to make well-informed decisions based on data-driven projections. With the exponential growth of data and advancements in machine learning algorithms, the need for accurate house price predictions has become crucial in the real estate industry. Due to their reliance on manual computations and few data sources, traditional valuation methods frequently fall short of delivering precise predictions. The House Price Prediction Model overcomes these constraints by relying on a powerful machine learning model capable of analysing massive volumes of data and finding significant patterns. This solution opens up new opportunities for increased efficiency, improved decision-making, and better understanding of the housing market dynamics.
 
 
