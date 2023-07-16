@@ -66,21 +66,39 @@ Evaluate the performance of the trained model using appropriate evaluation metri
 If the model's performance is not satisfactory, consider fine-tuning the model by adjusting hyperparameters or trying different algorithms. This iterative process helps improve the model's accuracy.
 ##### Step 11: Make Predictions
 Once the model is trained and evaluated, it is ready to make predictions on new, unseen house data.
+##### Step 12: Create Pickle file
+Pickle file automatically generated when running the '.ipynb' file in VS Code.
 ### Model Deployment on AWS
+##### Step 1: Create an AWS Account
+If don't have an AWS account, sign up at https://aws.amazon.com/
+##### Step 2: Download and Install WinSCP and PuTTY
+In our System, download and install these two software: WinSCP and PuTTY
+* WinSCP: WinSCP (Windows Secure Copy) is a popular graphical SFTP (SSH File Transfer Protocol) and SCP (Secure Copy) client for Windows. It allows you to securely transfer files between your local machine and a remote server, such as an EC2 instance on AWS.
+* PuTTy: PuTTY is a free and open-source SSH and telnet client that allows you to securely connect to remote servers, such as AWS EC2 instances.
+##### Step 3: Set Up an EC2 Instance
+EC2 (Elastic Compute Cloud) is a virtual server in the AWS cloud. It will be used to host machine learning project. Follow these steps to set up an EC2 instance:
+* Go to the EC2 dashboard.
+* Click on "Launch Instance."
+* Create security group by giving all the details with Inbound and Outbound rules.
+* Choose an Amazon Machine Image (AMI) that suits project's requirements. For this project, I am going through with Ubuntu.
+* Select an instance type based on computational needs, I am using here t2.micro as it is free tier eligible.
+* Create a new key pair or use an existing one for secure access to the instance.
+* Configure the instance details, such as network settings and storage.
+* Launch the instance.
+##### Step 4: Connect to the EC2 Instance
+Connect to EC2 instance, need an SSH client and from there copy Public DNS link and check with username. Open WinSCP and paste this Public DNS link in hostname and give username, in password have to give that file path which is generated while creating key pair through 'Advanced' option and then click on Login. After Login, upload all the files to server through WinSCP.
+##### Step 5: Set Up the Environment
+Need to set up the environment by installing the required dependencies which in PuTTY using in my project such as python, flask, numpy and scikit-learn. 
+##### Step 6: Deploy the Model
+Once model is trained and ready for deployment, create a Flask web application to host our model and provide a user interface through HTML. Run the flask file in PuTTY and copy the port number, and also copy the Public DNS link from instance and paste them in the browser with colon such as http://ec2-13-53-197-170.us-east-2.compute.amazonaws.com:8080/ 
 
+### Provide the relevant features of a house as input as shown below: 
 
-Provide the relevant features of a house as input to the model, and it will estimate the price based on the learned patterns.
+![image](https://github.com/shaheeneqbal/House-Price-Prediction-Model-Deployment-with-AWS/assets/67499556/c17b1597-f753-4e9a-9e95-1c6df054e57d)
 
+### Estimated the price based on the learned patterns as shown below:
 
-
-
-
-
-
-
-
-
-
+![image](https://github.com/shaheeneqbal/House-Price-Prediction-Model-Deployment-with-AWS/assets/67499556/7b8189c0-0ae3-4062-9cca-a620ccf259f6)
 
 ### License
 This project is licensed under the MIT License. Feel free to modify and use it as per your requirements.
