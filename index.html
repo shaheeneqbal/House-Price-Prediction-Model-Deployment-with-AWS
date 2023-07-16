@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>House Price Predictor</title>
+</head>
+
+<style>
+    body {
+        background-image: url('https://c.ndtvimg.com/2021-10/0qmr3sco_home-decor-345_295x200_15_October_21.jpg');
+        background-repeat: no-repeat;
+        background-size: 1600px 800px;
+    }
+</style>
+
+<body>
+
+    <h1 align="center"><b><u>House Price Predictor</u></b></h1>
+    
+    <form method="post" action="/predict">
+    <h4 align="center">
+        <label for="floors" >Total Floors in House:</label>
+        <input type="text" id="floors" name="floors"><br><br>
+
+        <label for="bedrooms">Number of Bedrooms:</label>
+        <input type="text" id="bedrooms" name="bedrooms"><br><br>
+    
+        <label for="bathrooms">Number of Bathrooms:</label>
+        <input type="text" id="bathrooms" name="bathrooms"><br><br>
+    
+        <label for="sqft_living">Square Footage of the House:</label>
+        <input type="text" id="sqft_living" name="sqft_living"><br><br>
+
+        <label for="sqft_lot">Square Footage of the Lot:</label>
+        <input type="text" id="sqft_lot" name="sqft_lot"><br><br>
+
+        <label for="sqft_above">Square Footage of House apart from Basement:</label>
+        <input type="text" id="sqft_above" name="sqft_above"><br><br>
+
+        <label for="sqft_basement">Square Footage of the Basement:</label>
+        <input type="text" id="sqft_basement" name="sqft_basement"><br><br>
+
+        <label for="view">Has been viewed:</label>
+        <input type="text" id="view" name="view"><br><br>
+
+        <label for = 'waterfront'>House which has a view to a Waterfront:</label><br>
+        <input type = 'radio' value="1" name = 'waterfront' id="waterfront">Yes<br>
+        <input type = 'radio' value="0" name = 'waterfront' id="waterfront">No<br><br>
+
+        How Good the Condition is Overall:
+        <select name="condition" id="condition">
+            <option>Select</option>
+            <option value="5">Excellent</option>
+            <option value="4">Very Good</option>
+            <option value="3">Good</option>
+            <option value="2">Fair</option>
+            <option value="1">Poor</option>
+        </select><br><br>
+
+        City of USA:
+        <select name="city" id="city">
+            <option>Select</option>
+            <option value="9">Seattle</option>
+            <option value="7">Renton</option>
+            <option value="1">Bellevue</option>
+            <option value="6">Redmond</option>
+            <option value="4">Kirkland</option>
+            <option value="2">Issaquah</option>
+            <option value="3">Kent</option>
+            <option value="0">Auburn</option>
+            <option value="8">Sammamish</option>
+            <option value="5">Other</option>
+        </select><br><br>
+
+        <label for="statezip">Zip Code:</label>
+        <input type="text" id="statezip" name="statezip" placeholder="98xxx"><br><br>
+        
+        <input type="submit" value="Predict Price"><br><br>
+    </h4>
+    </form>
+    
+</body>
+</html>
