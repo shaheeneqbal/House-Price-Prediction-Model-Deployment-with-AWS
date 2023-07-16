@@ -50,10 +50,10 @@ To run the code in this repository, need to have the following dependencies inst
 Explore the dataset to understand its structure, identify any missing values, outliers, or inconsistencies.
 ##### Step 3: Data Cleaning and Preprocessing
 Preprocessing the dataset involves handling missing values and outliers by either imputing them or removing the corresponding instances. Encode categorical variables using techniques such as one-hot encoding or label encoding. Scale numerical features if necessary to ensure all features have a similar range.
-##### Step 4: Split the Dataset into Dependent and Independent Features
-Spliting the preprocessed dataset into dependent and independent features. The dependent feature is the target variable, which in this case is the price and independent features are the remaining variables that will be used to predict the house price. 
-##### Step 5: Feature Selection and Engineering
+##### Step 4: Feature Selection and Engineering
 Feature selection and engineering are used to improve the model's accuracy and interpretability by including the most informative features and transforming them appropriately. It requires a combination of data analysis, statistical techniques, and domain knowledge to select and engineer relevant features effectively for prediction.
+##### Step 5: Split the Dataset into Dependent and Independent Features
+Spliting the preprocessed dataset into dependent and independent features. The dependent feature is the target variable, which in this case is the price and independent features are the remaining variables that will be used to predict the house price. 
 ##### Step 6: Split the Dataset into Training and Testing
 Spliting the preprocessed dataset into training and testing sets. The training set will be used to train the machine learning model, while the testing set will be used to evaluate its performance.
 ##### Step 7: Machine Learning Algorithms
